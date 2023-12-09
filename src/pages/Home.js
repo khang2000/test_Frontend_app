@@ -129,7 +129,7 @@ const Home = () => {
                     width={45}
                     src={
                       product.image
-                        ? `http://localhost:8000/${product.image}`
+                        ? `https://test-backend-2-spql.onrender.com/${product.image}`
                         : noinfor
                     }
                   />
