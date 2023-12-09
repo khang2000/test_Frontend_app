@@ -19,7 +19,7 @@ const AddProduct = () => {
   const Add = (e) => {
     e.preventDefault();
 
-    fetch(`https://test-backend-x0xz.onrender.com/api/v1/product`, {
+    fetch(`https://test-backend-2-spql.onrender.com/api/v1/product`, {
       method: "POST",
       //   headers: {
       //     Authorization: `Bearer ${token}`,

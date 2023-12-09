@@ -17,7 +17,7 @@ const ProductModal = (props) => {
           <img
             src={
               productModal.image
-                ? `https://test-backend-x0xz.onrender.com/${productModal.image}`
+                ? `https://test-backend-2-spql.onrender.com/${productModal.image}`
                 : noinfor
             }
           ></img>

@@ -14,7 +14,7 @@ const UpdateProduct = () => {
   const [description, setDecription] = useState();
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/v1/product/${id}`, {
+    fetch(`https://test-backend-2-spql.onrender.com/api/v1/product/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -41,15 +41,18 @@ const UpdateProduct = () => {
   const Add = (e) => {
     e.preventDefault();
 
-    fetch(`http://localhost:8000/api/v1/product/update/${id}`, {
-      method: "PUT",
-      //   headers: {
-      //     Authorization: `Bearer ${token}`,
-      //     "Content-Type": "application/json",
-      //     Accept: "application/json",
-      //   },
-      body: formData,
-    })
+    fetch(
+      `https://test-backend-2-spql.onrender.com/api/v1/product/update/${id}`,
+      {
+        method: "PUT",
+        //   headers: {
+        //     Authorization: `Bearer ${token}`,
+        //     "Content-Type": "application/json",
+        //     Accept: "application/json",
+        //   },
+        body: formData,
+      }
+    )
       .then((response) => response.json())
       .then((data) => {
         //xu ly logic neu can

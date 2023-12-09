@@ -10,7 +10,7 @@ const User = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/user/" + id)
+      .get("https://test-backend-2-spql.onrender.com/api/user/" + id)
       .then((result) => {
         console.log(result);
         setUserName(result.data.data.userName);

@@ -18,7 +18,7 @@ const Login = () => {
   };
   const addData = (e) => {
     e.preventDefault();
-    fetch("https://test-backend-x0xz.onrender.com/api/auth/signin", {
+    fetch("https://test-backend-2-spql.onrender.com/api/auth/signin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -42,45 +42,39 @@ const Login = () => {
   };
   return (
     <div className="container mt-3">
-      <section className="d-flex justify-content-between">
-        <div className="left-data mt-3" style={{ width: "100%" }}>
-          <h3 className="text-center col-lg-6">Đăng nhập</h3>
-          <form>
-            <div className="mb-3 col-lg-6">
-              <input
-                type="email"
-                placeholder="enter your email?"
-                className="form-control"
-                id="exampleInputEmail1"
-                onChange={getData}
-                name="email"
-              />
-            </div>
-            <div className="mb-3 col-lg-6">
-              <input
-                type="password"
-                className="form-control"
-                placeholder="password"
-                onChange={getData}
-                name="password"
-              />
-            </div>
-            <button
-              type="submit"
-              onClick={addData}
-              className="btn btn-primary col-lg-6"
-            >
-              Submit
-            </button>
-          </form>
-          <p className="mt-3">
-            Already Have an Account{" "}
-            <span>
-              <Link to="/register">Đăng ký</Link>
-            </span>
-          </p>
-        </div>
-      </section>
+      <div className="left-data mt-3">
+        <h3 className="text-center ">Đăng nhập</h3>
+        <form>
+          <div className="mb-3 ">
+            <input
+              type="email"
+              placeholder="enter your email?"
+              className="form-control"
+              id="exampleInputEmail1"
+              onChange={getData}
+              name="email"
+            />
+          </div>
+          <div className="mb-3 ">
+            <input
+              type="password"
+              className="form-control"
+              placeholder="password"
+              onChange={getData}
+              name="password"
+            />
+          </div>
+          <button type="submit" onClick={addData} className="btn btn-primary ">
+            Submit
+          </button>
+        </form>
+        <p className="mt-3">
+          Already Have an Account{" "}
+          <span>
+            <Link to="/register">Đăng ký</Link>
+          </span>
+        </p>
+      </div>
     </div>
   );
 };

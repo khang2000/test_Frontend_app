@@ -11,7 +11,7 @@ const Home = () => {
   const token = localStorage.getItem("token");
   const navigate = useNavigate();
   useEffect(() => {
-    fetch("https://test-backend-x0xz.onrender.com/api/v1/product/list", {
+    fetch("https://test-backend-2-spql.onrender.com/api/v1/product/list", {
       method: "GET",
       headers: {
         // Authorization: `Bearer ${token}`,
@@ -41,7 +41,7 @@ const Home = () => {
 
   const [isOpenModal, setOpenModal] = useState(false);
   const handleOpenModal = (_id) => {
-    fetch(`https://test-backend-x0xz.onrender.com/api/v1/product/${_id}`, {
+    fetch(`https://test-backend-2-spql.onrender.com/api/v1/product/${_id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -66,7 +66,7 @@ const Home = () => {
       alert("Bạn chưa đăng nhập");
     } else {
       fetch(
-        `https://test-backend-x0xz.onrender.com/api/v1/product/delete/${id}`,
+        `https://test-backend-2-spql.onrender.com/api/v1/product/delete/${id}`,
         {
           method: "DELETE",
           headers: {

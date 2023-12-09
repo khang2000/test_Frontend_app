@@ -7,6 +7,11 @@
   margin: auto;
   margin-top: 50px;
 }
+.left-data {
+  width: 40%;
+  margin: auto;
+  margin-top: 50px;
+}
 .inputInfor {
   margin: 30px 450px;
 }
@@ -28,13 +33,7 @@
 .btn-add-product:hover {
   background-color: blanchedalmond;
 }
-/* .link-profile {
-  text-decoration: none;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-} */
+
 .link-profile {
   display: block;
   /* padding: 0.5rem 1rem; */
